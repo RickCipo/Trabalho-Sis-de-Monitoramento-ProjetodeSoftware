@@ -1,3 +1,5 @@
+//Criamos esse arquivo para organizar mais facilmente o programa, separa as responsabilidades: DadosColetados apenas representa os dados, e DadosRepositorio gerencia como e onde salvá-los.
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,4 +46,5 @@ public class DadosRepositorio {
         }
         System.out.println("---------------------------------------------");
     }
+
 }
