@@ -1,12 +1,12 @@
 public class DadosColetados {
 
-    // 1. Atributos privados
+    //Atributos privados
     private int id;
     private float temperatura;
     private float umidade;
     private String imagemUrl;
 
-    // 2. Construtor para criar o "pacote" de dados
+    //Construtor para criar o "pacote" de dados
     public DadosColetados(int id, float temperatura, float umidade, String imagemUrl) {
         this.id = id;
         this.temperatura = temperatura;
@@ -14,7 +14,7 @@ public class DadosColetados {
         this.imagemUrl = imagemUrl;
     }
 
-    // 3. Getters e Setters para que outras classes possam ler e modificar os dados
+    //Getters e Setters para que outras classes possam ler e modificar os dados
     public int getId() {
         return id;
     }
@@ -53,4 +53,5 @@ public class DadosColetados {
                 ", imagemUrl='" + imagemUrl + '\'' +
                 '}';
     }
+
 }
