@@ -1,12 +1,12 @@
 public class AreaAgricola {
 
-    // 1. Atributos privados para garantir o encapsulamento
+    //Atributos privados para garantir o encapsulamento
     private int id;
     private String localizacao;
     private String tipoCultivo;
     private float tamanho;
 
-    // 2. Construtor para criar e inicializar um objeto AreaAgricola
+    //Construtor para criar e inicializar um objeto AreaAgricola
     public AreaAgricola(int id, String localizacao, String tipoCultivo, float tamanho) {
         this.id = id;
         this.localizacao = localizacao;
@@ -14,7 +14,7 @@ public class AreaAgricola {
         this.tamanho = tamanho;
     }
 
-    // 3. Getters e Setters para acesso controlado aos atributos
+    //Getters e Setters para acesso aos atributos
     public int getId() {
         return id;
     }
@@ -42,4 +42,5 @@ public class AreaAgricola {
     public void setTamanho(float tamanho) {
         this.tamanho = tamanho;
     }
+
 }
