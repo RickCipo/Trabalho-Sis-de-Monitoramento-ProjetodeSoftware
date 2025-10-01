@@ -5,23 +5,23 @@ import java.util.List;
 
 public class DadosRepositorio {
 
-    // 1. Usando uma lista para simular um banco de dados em memória
+    //Usando uma lista para simular um banco de dados em memória
     private List<DadosColetados> bancoDeDadosSimulado;
 
-    // 2. Construtor que inicializa nosso "banco de dados"
+    //Construtor que inicializa nosso "banco de dados"
     public DadosRepositorio() {
         this.bancoDeDadosSimulado = new ArrayList<>();
         System.out.println("Repositório de dados inicializado.");
     }
 
-    // 3. Método para salvar os dados (adicionar na lista)
+    //Método para salvar os dados (adicionar na lista)
     public void salvar(DadosColetados dados) {
         System.out.println("Salvando dados no repositório...");
         this.bancoDeDadosSimulado.add(dados);
         System.out.println("Dados salvos com sucesso! ID: " + dados.getId());
     }
 
-    // 4. Método para buscar os dados pelo seu ID
+    //Método para buscar os dados pelo seu ID
     public DadosColetados buscarPorId(int id) {
         System.out.println("Buscando dados com ID: " + id);
         for (DadosColetados dados : this.bancoDeDadosSimulado) {
@@ -48,3 +48,4 @@ public class DadosRepositorio {
     }
 
 }
+
