@@ -30,7 +30,7 @@ Clone o projeto:
 
 Bash
 
-git clone 
+git clone https://github.com/RickCipo/Trabalho-Sis-de-Monitoramento-ProjetodeSoftware.git
 Configure o Banco de Dados:
 
 Crie um banco de dados.
