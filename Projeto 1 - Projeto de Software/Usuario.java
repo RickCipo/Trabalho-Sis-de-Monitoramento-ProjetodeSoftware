@@ -1,12 +1,12 @@
 public abstract class Usuario {
 
-    // 1. Atributos comuns a todos os tipos de usuários
+    //Atributos comuns a todos os tipos de usuários
     private int id;
     private String nome;
     private String email;
-    private String senha; // Em um sistema real, isso seria um hash seguro
+    private String senha;
 
-    // 2. Construtor que será chamado pelas classes filhas
+    //Construtor que será chamado pelas classes filhas
     public Usuario(int id, String nome, String email, String senha) {
         this.id = id;
         this.nome = nome;
@@ -14,7 +14,7 @@ public abstract class Usuario {
         this.senha = senha;
     }
 
-    // 3. Métodos comuns a todos os usuários
+    //Métodos comuns a todos os usuários
     public boolean login(String email, String senha) {
         // Lógica de simulação de login
         if (this.email.equals(email) && this.senha.equals(senha)) {
@@ -50,8 +50,8 @@ public abstract class Usuario {
         this.email = email;
     }
 
-    // Não é comum ter um getter para a senha, mas o setter é útil
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
 }
