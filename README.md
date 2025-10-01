@@ -30,7 +30,7 @@ Clone o projeto:
 
 Bash
 
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone 
 Configure o Banco de Dados:
 
 Crie um banco de dados.
