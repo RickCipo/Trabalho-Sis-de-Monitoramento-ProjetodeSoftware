@@ -2,7 +2,7 @@ import java.util.Date;
 
 public class MissaoVoo {
 
-    // 1. Atributos privados
+    //Atributos privados
     private int id;
     private Date dataHora;
     private String status;
@@ -12,7 +12,7 @@ public class MissaoVoo {
     private AreaAgricola area;
     private DadosColetados dadosColetados; // Ligação para os dados que serão gerados
 
-    // 2. Construtor para criar uma nova missão
+    //Construtor para criar uma nova missão
     public MissaoVoo(int id, Date dataHora, Drone drone, AreaAgricola area) {
         this.id = id;
         this.dataHora = dataHora;
@@ -22,7 +22,7 @@ public class MissaoVoo {
         this.dadosColetados = null; // Os dados ainda não existem
     }
 
-    // 3. Métodos de negócio para controlar o ciclo de vida da missão
+    //Métodos de negócio para controlar o ciclo de vida da missão
     public void iniciarMissao() {
         if (this.status.equals("Agendada")) {
             this.status = "Em andamento";
@@ -41,7 +41,7 @@ public class MissaoVoo {
         }
     }
 
-    // 4. Getters e Setters para acesso controlado
+    //Getters e Setters para acesso controlado
     public int getId() {
         return id;
     }
@@ -70,4 +70,5 @@ public class MissaoVoo {
     public void setDadosColetados(DadosColetados dadosColetados) {
         this.dadosColetados = dadosColetados;
     }
+
 }
