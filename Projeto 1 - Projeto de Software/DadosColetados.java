@@ -43,7 +43,7 @@ public class DadosColetados {
         this.imagemUrl = imagemUrl;
     }
     
-    // 4. (Opcional, mas muito útil) Método toString para facilitar a visualização dos dados
+    //Método toString para facilitar a visualização dos dados
     @Override
     public String toString() {
         return "DadosColetados {" +
@@ -53,5 +53,5 @@ public class DadosColetados {
                 ", imagemUrl='" + imagemUrl + '\'' +
                 '}';
     }
-
 }
+
