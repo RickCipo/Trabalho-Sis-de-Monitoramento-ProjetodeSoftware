@@ -26,7 +26,7 @@ public class Main {
         
         // A) Salvar Drone (DAO)
         DroneDAO droneDao = new DroneDAO();
-        droneDao.cadastrar(drone); // Se não salvar o drone, a missão falha
+        droneDao.salvar(drone);
         
         // B) Salvar Área (DAO) - NOVIDADE
         AreaAgricolaDAO areaDao = new AreaAgricolaDAO();
