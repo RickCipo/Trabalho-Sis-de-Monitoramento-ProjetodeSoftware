@@ -44,7 +44,7 @@ Ajuste os dados de conexão (URL, usuário, senha) no código, na classe Connect
 Bash
 
 # Compile o projeto
-mvn clean install
+javac -cp "." view/Main.java
 
 # Execute a classe principal
-mvn exec:java -Dexec.mainClass="Main"
+java -cp ".;mysql-connector-j-9.5.0.jar" view.Main
